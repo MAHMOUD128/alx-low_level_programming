@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-  * in general we are using printf but now we are using `puts` function
-  * Return: 0 (Success)
+ * main - we are using 'puts' function
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
