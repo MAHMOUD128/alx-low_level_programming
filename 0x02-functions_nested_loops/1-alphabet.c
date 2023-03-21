@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * main - print char a-z
+ * print_alphabet - Print a-z in one line
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 
 void print_alphabet(void)
 {
+
 	int i;
 
     	for (i = 97 ; i < 123 ; i++)
@@ -15,4 +16,5 @@ void print_alphabet(void)
         	_putchar(i);
     	}
     	_putchar('\n');
+
 }
