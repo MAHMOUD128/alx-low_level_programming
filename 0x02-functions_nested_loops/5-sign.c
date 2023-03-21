@@ -6,7 +6,7 @@
  * @n: number user entiry it .
  * Return: 1 if n greater , -1 if less , 0 if equql zero.
  */
- 
+
 int print_sign(int n)
 {
 	if (n > 0)
