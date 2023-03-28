@@ -5,22 +5,22 @@
  * @param s : string to be reversed
  * @return : void
  */
- 
 void rev_string(char *s)
 {
-    int i, j;
-    char temp;
+	int i, j;
+	char tmp;
 
-    for (i = 0; s[i] != '\0'; i++)
-    {
-        ;
-    }
-    i--;
-    for (j = 0; j < i; j++)
-    {
-        temp = s[j];
-        s[j] = s[i];
-        s[i] = temp;
-        i--;
-    }
+	for (j = 0; s[j] != '\0'; j++)
+		;
+	--j;
+	i = 0;
+
+	while (i < j)
+	{
+		tmp = s[i];
+		s[i] = s[j];
+		s[j] = tmp;
+		i++;
+		j--;
+	}
 }
