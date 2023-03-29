@@ -2,8 +2,8 @@
 
 /**
  * rev_string - reverses a string
- * @param s : string to be reversed
- * @return : void
+ * @s: string to be reversed
+ * Return: void
  */
 void rev_string(char *s)
 {
