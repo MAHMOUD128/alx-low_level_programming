@@ -6,7 +6,9 @@
  * @src: source string
  * Return: pointer to the resulting string dest
  */
-char *_strcat(char *dest, char *src){
+
+char *_strcat(char *dest, char *src)
+{
 	char *p = dest;
 
 	while (*p != '\0')
