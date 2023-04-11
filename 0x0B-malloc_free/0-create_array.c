@@ -10,10 +10,19 @@
   */
 char *create_array(unsigned int size, char c)
 {
-	char *array = (char *)malloc(size * sizeof(char));
-    	if (array == NULL)
-        	return NULL;
-    	for (unsigned int i = 0; i < size; i++)
-        	array[i] = c;
-    	return array;
+	if (size)
+	{
+		char *arr = (char *)malloc(size * sizeof(char)), *arrcpy = arr;
+
+		while (arr != (void *)'\0' && size--)
+		{
+			*arrcpy = c;
+			arrcpy++;
+		}
+		return (arr);
+	}
+	else
+	{
+		return ((void *)'\0');
+	}
 }
